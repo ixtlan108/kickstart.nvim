@@ -877,12 +877,17 @@ require('lazy').setup({
         styles = {
           comments = { italic = false }, -- Disable italics in comments
         },
+	on_colors = function(colors)
+		colors.fg_gutter = '#007e90'
+		-- colors.fg_gutter = '#004f73'
+	end
       }
 
       -- Load the colorscheme here.
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       vim.cmd.colorscheme 'tokyonight-night'
+      -- vim.cmd('hi TabLine guibg=#4682b4')
     end,
   },
 
