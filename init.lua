@@ -153,6 +153,11 @@ vim.opt.inccommand = 'split'
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
+--vim.cmd [[
+--  highlight CursorLine guibg=#000000 guifg=#ffffff
+--]]
+--vim.cmd [[ highlight Cursor guibg=#000000 guifg=#ffffff ]] -- Set cursor to white
+
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
@@ -888,7 +893,6 @@ require('lazy').setup({
       -- Like many other themes, this one has different styles, and you could load
       -- any other, such as 'tokyonight-storm', 'tokyonight-moon', or 'tokyonight-day'.
       --vim.cmd.colorscheme 'tokyonight-night'
-      vim.cmd.colorscheme 'catppuccin'
       -- vim.cmd('hi TabLine guibg=#4682b4')
     end,
   },
