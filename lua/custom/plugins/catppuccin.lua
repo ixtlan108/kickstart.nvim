@@ -24,10 +24,17 @@ return {
           TabLine = { bg = colors.flamingo },
           CmpBorder = { fg = colors.surface2 },
           Pmenu = { bg = colors.none },
-	  TermCursorNC = { fg = colors.base, bg = colors.subtext0 },
+          TermCursorNC = { fg = colors.base, bg = colors.subtext0 },
         }
       end,
     }
     vim.cmd.colorscheme 'catppuccin'
+    -- Make Neovim transparent
+    vim.cmd [[
+      highlight Normal guibg=none
+      highlight NonText guibg=none
+      highlight Normal ctermbg=none
+      highlight NonText ctermbg=none
+    ]]
   end,
 }
