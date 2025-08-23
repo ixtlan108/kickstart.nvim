@@ -25,6 +25,7 @@ return {
           CmpBorder = { fg = colors.surface2 },
           Pmenu = { bg = colors.none },
           TermCursorNC = { fg = colors.base, bg = colors.subtext0 },
+          LineNr = { fg = '#ffffff' },
         }
       end,
     }
