@@ -90,6 +90,15 @@ P.S. You can delete this when you're done too. It's your config now! :)
 vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
+-- tree style view in netrw
+vim.g.netrw_liststyle=3
+
+-- no banner 
+vim.g.netrw_banner=0
+
+-- open in prior window 
+vim.g.netrw_browse_split=3
+
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
 
@@ -127,6 +136,7 @@ vim.opt.undofile = true
 -- Case-insensitive searching UNLESS \C or one or more capital letters in the search term
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+vim.opt.incsearch = true
 
 -- Keep signcolumn on by default
 vim.opt.signcolumn = 'yes'
