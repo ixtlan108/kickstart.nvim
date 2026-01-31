@@ -25,3 +25,5 @@ keymap.set('n', '<leader>tn', '<cmd>tabnew %<CR>', { desc = 'Open current buffer
 -- keymap.set('n', '<leader>tl', '<cmd>tablast<CR>', { desc = 'Go to last tab' })
 
 -- keymap.set('n', '<leader>e', '<cmd>:25Lex<CR>', { desc = 'Open Netrw 25% right' })
+vim.keymap.set('n', '<leader>ce', ':CsvViewEnable delimiter=;<CR>', { desc = 'Enable CSV view with semicolon delimiter' })
+vim.keymap.set('n', '<leader>cx', ':CsvViewDisable<CR>', { desc = 'Disable CSV view' })
