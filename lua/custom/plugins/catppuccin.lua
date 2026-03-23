@@ -30,7 +30,7 @@ return {
         }
       end,
     }
-    vim.cmd.colorscheme 'catppuccin'
+    -- vim.cmd.colorscheme 'catppuccin'
     -- Make Neovim transparent
     vim.cmd [[
       highlight Normal guibg=none
