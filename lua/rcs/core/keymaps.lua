@@ -25,5 +25,16 @@ keymap.set('n', '<leader>tn', '<cmd>tabnew %<CR>', { desc = 'Open current buffer
 -- keymap.set('n', '<leader>tl', '<cmd>tablast<CR>', { desc = 'Go to last tab' })
 
 -- keymap.set('n', '<leader>e', '<cmd>:25Lex<CR>', { desc = 'Open Netrw 25% right' })
-vim.keymap.set('n', '<leader>ce', ':CsvViewEnable delimiter=;<CR>', { desc = 'Enable CSV view with semicolon delimiter' })
-vim.keymap.set('n', '<leader>cx', ':CsvViewDisable<CR>', { desc = 'Disable CSV view' })
+keymap.set('n', '<leader>ce', ':CsvViewEnable delimiter=;<CR>', { desc = 'Enable CSV view with semicolon delimiter' })
+keymap.set('n', '<leader>cx', ':CsvViewDisable<CR>', { desc = 'Disable CSV view' })
+
+local function setCatppuccin()
+  vim.cmd 'colorscheme catppuccin-macchiato'
+end
+
+local function setModus()
+  vim.cmd 'colorscheme modus_operandi'
+end
+
+keymap.set('n', '<leader>c1', setCatppuccin, { desc = 'Set catppuccin-macchiato' })
+keymap.set('n', '<leader>c2', setModus, { desc = 'Set modus_operandi' })

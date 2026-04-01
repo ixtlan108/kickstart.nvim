@@ -91,13 +91,13 @@ vim.g.mapleader = ' '
 vim.g.maplocalleader = ' '
 
 -- tree style view in netrw
-vim.g.netrw_liststyle=3
+vim.g.netrw_liststyle = 3
 
--- no banner 
-vim.g.netrw_banner=0
+-- no banner
+vim.g.netrw_banner = 0
 
--- open in prior window 
-vim.g.netrw_browse_split=3
+-- open in prior window
+vim.g.netrw_browse_split = 3
 
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = false
