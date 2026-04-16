@@ -5,8 +5,8 @@ keymap.set('n', '<leader>sh', '<C-w>s', { desc = 'Split window horizontally' })
 -- keymap.set('n', '<leader>se', '<C-w>=', { desc = 'Make splits equal size' })
 keymap.set('n', '<leader>sx', '<cmd>close<CR>', { desc = 'Close current split' })
 
-keymap.set('n', '<C-l>', ':set background=light<CR>', { desc = 'Set background light' })
-keymap.set('n', '<C-k>', ':set background=dark<CR>', { desc = 'Set background dark' })
+-- keymap.set('n', '<C-l>', ':set background=light<CR>', { desc = 'Set background light' })
+-- keymap.set('n', '<C-k>', ':set background=dark<CR>', { desc = 'Set background dark' })
 
 keymap.set('n', '<C-x>', ':tabnew<CR>', { desc = 'New tab' })
 keymap.set('n', '<C-n>', ':tabn<CR>', { desc = 'Move to next tab' })

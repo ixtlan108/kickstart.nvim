@@ -176,6 +176,11 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
+-- Folds  
+vim.opt.foldmethod = "marker"
+-- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
+vim.opt.foldenable = true -- Prevents auto-folding on file open   
+
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
