@@ -176,10 +176,10 @@ vim.opt.scrolloff = 10
 -- See `:help 'confirm'`
 vim.opt.confirm = true
 
--- Folds  
-vim.opt.foldmethod = "marker"
+-- Folds
+vim.opt.foldmethod = 'marker'
 -- vim.opt.foldexpr = "nvim_treesitter#foldexpr()"
-vim.opt.foldenable = true -- Prevents auto-folding on file open   
+vim.opt.foldenable = true -- Prevents auto-folding on file open
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
@@ -255,6 +255,9 @@ vim.opt.rtp:prepend(lazypath)
 require 'rcs.core'
 
 require('lazy').setup({
+  rocks = {
+    hererocks = false,
+  },
   -- NOTE: Plugins can be added with a link (or for a github repo: 'owner/repo' link).
   'tpope/vim-sleuth', -- Detect tabstop and shiftwidth automatically
 
