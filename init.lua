@@ -696,6 +696,14 @@ require('lazy').setup({
         -- ts_ls = {},
         --
 
+        hls = {
+          settings = {
+            haskell = {
+              formattingProvider = 'none',
+            },
+          },
+        },
+
         lua_ls = {
           -- cmd = { ... },
           -- filetypes = { ... },
