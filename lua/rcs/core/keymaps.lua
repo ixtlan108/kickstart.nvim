@@ -32,9 +32,24 @@ local function setCatppuccin()
   vim.cmd 'colorscheme catppuccin-macchiato'
 end
 
-local function setModus()
+local function setModusOperandi()
   vim.cmd 'colorscheme modus_operandi'
 end
 
+local function setModusVivendi()
+  vim.cmd 'colorscheme modus_vivendi'
+end
+
+local function setTokyonight()
+  vim.cmd 'colorscheme tokyonight'
+end
+
+local function setDesert()
+  vim.cmd 'colorscheme desert'
+end
+
 keymap.set('n', '<leader>c1', setCatppuccin, { desc = 'Set catppuccin-macchiato' })
-keymap.set('n', '<leader>c2', setModus, { desc = 'Set modus_operandi' })
+keymap.set('n', '<leader>c2', setModusOperandi, { desc = 'Set modus_operandi' })
+keymap.set('n', '<leader>c3', setModusVivendi, { desc = 'Set modus_vivendi' })
+keymap.set('n', '<leader>c4', setTokyonight, { desc = 'Set tokyonight' })
+keymap.set('n', '<leader>c5', setDesert, { desc = 'Set desert' })
